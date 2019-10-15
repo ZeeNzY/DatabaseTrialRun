@@ -34,7 +34,8 @@ public class TopicServiceImpl implements TopicService {
 
 
     @Override
-    public Topic create(Topic topic) {
+    public Topic create(Topic topic)
+    {
         return this.topicRepository.save(topic);
     }
 

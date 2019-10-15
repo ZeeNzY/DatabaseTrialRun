@@ -8,7 +8,7 @@ public class Topic {
     @Id
     private String topicID;
     @Column(name = "topic_discussion")
-  //  @OneToMany()
+    //@OneToMany()
     private String topic;
 
     private Topic() {
