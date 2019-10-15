@@ -19,6 +19,10 @@ public class TopicController {
 
     @Autowired
     private TopicService topicService;
+    @GetMapping("/home")
+    public String home(){
+        return "home";
+    }
 
     @PostMapping(value = "/create/", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity createTopic(@PathVariable String subject)
